@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+  <link rel="stylesheet" href="./css/accordion.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Optimum Nutrition</title>
+</head>
+
+<body>
+  <div class="top-container">
+    <header>
+      <div class="img-logo">
+        <a href="index.html"><img src="./img/logo-negro.png" alt="" /></a>
+      </div>
+      <div class="menu-wrapper">
+        <a href="#">Inicio</a>
+        <div class="button-bag">
+          <div class="countCartIcon">
+            <span class="countCart"></span>
+          </div>
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512;" xml:space="preserve">
+            <g>
+              <g>
+                <path d="M430.143,153.785c-1.918-17.506-16.646-30.708-34.257-30.708h-26.656v73.846c0,8.157-6.613,14.769-14.769,14.769
+			s-14.769-6.613-14.769-14.769v-73.846H172.308v73.846c0,8.157-6.613,14.769-14.769,14.769s-14.769-6.613-14.769-14.769v-73.846
+			h-26.656c-17.611,0-32.339,13.202-34.257,30.708L55.01,398.769h401.982L430.143,153.785z" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path d="M465.211,473.785l-4.983-45.477H51.772l-4.984,45.477c-1.064,9.722,2.069,19.475,8.596,26.757
+			C61.911,507.824,71.266,512,81.046,512h349.91c9.78,0,19.133-4.177,25.661-11.459
+			C463.145,493.259,466.277,483.507,465.211,473.785z" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path d="M256,0C193.565,0,142.77,50.795,142.77,113.231v9.846h29.538v-9.846c0-46.148,37.544-83.692,83.692-83.692
+			s83.692,37.544,83.692,83.692v9.846h29.538v-9.846C369.231,50.795,318.436,0,256,0z" />
+              </g>
+            </g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+          </svg>
+
+          <div class="sidebar-buy">
+            <div class="title-sidebar">
+              <div class="title">Carrito</div>
+              <a href="#"><span class="countCart"></span> items - 0 PEN</a>
+            </div>
+            <div class="cart-wrapper">
+              <div class="cuppon-wrapper">
+                <input type="text" placeholder="Agrega un cupón">
+                <a href="#">Agregar</a>
+              </div>
+              <div class="button-bottom-wrapper">
+                <a class="gren-but" href="#">Pagar</a>
+                <a class="white-but" href="#">Más Productos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </header>
+  </div>
+
+  <!-- !! MAIN -->
+
+  <main>
+
+
+    <div class="product-calorias-wrapper">
+
+      <div class="product-contents">
+        <div class="content-wrapper">
+          <h1>
+            <span class="product-title">Gold Standard 100% Whey</span>
+            <span class="product-subtitle">Optimum Nutrition</span>
+          </h1>
+
+        </div>
+
+        <ul>
+          <li>Aislamiento de proteína de suero (WPI) ingrediente principal</li>
+          <li>Más de 0.14 oz de glutamina y ácido glutámico en cada porción</li>
+          <li>0.85 oz de proteína de suero</li>
+          <li>0.19 oz de BCAA naturales</li>
+
+        </ul>
+
+      </div>
+
+      <div class="img-wrap">
+        <img src="./img/page1-1.png" id="imageProduct" alt=""></div>
+
+      <div class="description">
+        <p>Los aislados de proteína de suero (WPI) son la forma más pura de proteína de suero de leche que existe actualmente. Utilizando WPI como ingrediente primario junto con el concentrado de proteína de suero de leche ultra filtrada (WPC) en Gold Standard 100% Whey, somos capaces de empaquetar 0.85 oz de proteína en cada porción para apoyar sus necesidades de construcción muscular después del entrenamiento.
+<br><br>
+La atención de ON al detalle se extiende a la mezcla. Este polvo de calidad superior se mezcla instantáneamente con una coctelera o un vaso y una cuchara.
+</p>
+        <div class="price"><span id="price">214.00 PEN</span></div>
+
+
+        <!-- !!! RADIO BUTTONS COULD BE HERE !!! -->
+
+
+
+        <form class="form" onchange="imgchange()">
+          <div class="title" style="display: none">Tamaño</div>
+          <div class="sizeWrap" style="display: none">
+            <div class="label">
+              <input type="radio" id="big" name="size" value="big" checked="checked" />
+              <label for="big"><img src="" alt=""></label>
+
+            </div>
+            <div class="label">
+              <input type="radio" id="small" name="size" value="small" />
+              <label for="small"><img src="" alt=""></label>
+
+            </div>
+          </div>
+
+          <div class="title">Sabor</div>
+          <div class="wrap">
+
+            <div class="label">
+              <input type="radio" id="choko" name="taste" value="choko" checked="checked" />
+              <label for="choko">Chocolate</label>
+            </div>
+
+            <div class="label">
+              <input type="radio" id="vanilla" name="taste" value="vanilla" />
+              <label for="vanilla">Vanilla</label>
+            </div>
+
+          </div>
+
+          <div class="number-input">
+            <input type="number" name="count" id="countProduct" min="1" value="1">
+            <div class="addProduct button">Añadir al carrito</div>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="cal-advantages-wrapper">
+      <div class="cal-advantages">
+        <div class="advantages-content">
+          <div class="advantages-title">¿Por qué Gold Standard Whey?</div>
+          <ul>
+            <li>Calidad.
+Optimum Nutrition tiene una historia de establecer uno de los altos estándares de calidad. Cada batido se mezcla sin esfuerzo utilizando solo un vaso y una cuchara, y sabe constantemente bien, agitar después de agitar.
+</li>
+            <li>Ocasiones de uso<br>
+- A primera hora de la mañana.<br>
+
+- Antes del ejercicio.<br>
+
+- Después del ejercicio.
+</li>
+            <li>Beneficios.
+Los aminoácidos en proteína son los bloques de construcción de la síntesis de proteínas musculares. Un batido de proteínas de suero consumido antes o después del ejercicio ayuda a iniciar este proceso de recuperación.</li>
+            <li>El estándar de oro para la calidad de las proteínas
+Optimum Nutrition ha sido confiada para proporcionar la más alta calidad en recuperación después del entrenamiento durante más de 30 años y en más de 90 países. Después de una cuidadosa selección del proveedor, cada ingrediente se prueba para asegurar una pureza, potencia y composición excepcionales. Nos mantenemos a los más altos estándares de producción, todo para que puedas desbloquear todo el potencial de tu cuerpo.
+</li>
+            <li>Equipado con proteína de trigo aislada.</li>
+            <li>Para mantener y aumentar la masa muscular magra.</li>
+            <li>Instantáneo para mezclar fácilmente con una cuchara.</li>
+          </ul>
+
+        </div>
+        <div class="wrap-img">
+          <img src="./img/page1-3.jpg" alt=""></div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </main> <!-- !! END MAIN -->
+
+  <div class="bottom-container">
+    <footer>
+      <div class="img-logo">
+        <img src="./img/logo-blanco.png" alt="" />
+      </div>
+      <div class="text-wrapper">
+        <div class="terms">
+          <p>Optimum Nutrition © 2020   </p>
+          <a href="politica-privacidad.html">Política de privacidad</a>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(".lazy").slick({
+      lazyLoad: "ondemand", // ondemand progressive anticipated
+      infinite: true,
+      autoHeight: true,
+      fade: true,
+    });
+  </script>
+  <script src="./js/accordion.js"></script>
+  <script>
+    function imgchange() {
+      let taste = document.querySelector('[name="taste"]:checked').value,
+        size = document.querySelector('[name="size"]:checked').value;
+      count = document.querySelector('[name="count"]').value
+
+      if (size === "small") {
+        document.getElementById("price").innerHTML = "214.00 PEN";
+      }
+
+      if (size === "big") {
+        document.getElementById("price").innerHTML = "214.00 PEN";
+
+      }
+
+      if (taste === "coco") {
+        if (size === 'small') {
+          document.getElementById("imageProduct").src = "";
+        }
+        if (size === 'big') {
+          document.getElementById("imageProduct").src =
+            "";
+        }
+      }
+
+      if (taste === "choko") {
+        if (size === 'small') {
+          document.getElementById("imageProduct").src = "";
+        }
+        if (size === 'big') {
+          document.getElementById("imageProduct").src =
+            "img/page1-1.png";
+        }
+      }
+
+      if (taste === "vanilla") {
+        if (size === 'small') {
+          document.getElementById("imageProduct").src = "";
+        }
+        if (size === 'big') {
+          document.getElementById("imageProduct").src =
+            "img/page1-2.png";
+        }
+      }
+    }
+  </script>
+  <script src="./cart.js"></script>
+</body>
+
+</html>

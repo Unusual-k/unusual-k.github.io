@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="./css/accordion.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Optimum Nutrition</title>
+</head>
+
+<body>
+    <div class="top-container">
+        <header>
+            <div class="img-logo">
+                <a href="index.html"><img src="./img/logo-negro.png" alt="" /></a>
+            </div>
+            <div class="menu-wrapper">
+                <a href="#">Inicio</a>
+                <div class="button-bag">
+                    <div class="countCartIcon"><span class="countCart"></span></div>
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M430.143,153.785c-1.918-17.506-16.646-30.708-34.257-30.708h-26.656v73.846c0,8.157-6.613,14.769-14.769,14.769
+			s-14.769-6.613-14.769-14.769v-73.846H172.308v73.846c0,8.157-6.613,14.769-14.769,14.769s-14.769-6.613-14.769-14.769v-73.846
+			h-26.656c-17.611,0-32.339,13.202-34.257,30.708L55.01,398.769h401.982L430.143,153.785z" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M465.211,473.785l-4.983-45.477H51.772l-4.984,45.477c-1.064,9.722,2.069,19.475,8.596,26.757
+			C61.911,507.824,71.266,512,81.046,512h349.91c9.78,0,19.133-4.177,25.661-11.459
+			C463.145,493.259,466.277,483.507,465.211,473.785z" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M256,0C193.565,0,142.77,50.795,142.77,113.231v9.846h29.538v-9.846c0-46.148,37.544-83.692,83.692-83.692
+			s83.692,37.544,83.692,83.692v9.846h29.538v-9.846C369.231,50.795,318.436,0,256,0z" />
+                            </g>
+                        </g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                    </svg>
+
+                    <div class="sidebar-buy">
+                        <div class="title-sidebar">
+                            <div class="title">Carrito</div>
+                            <a href="#"><span class="cardItems"></span> items - 0 PEN</a>
+                        </div>
+                        <div class="cart-wrapper">
+                            <div class="cuppon-wrapper">
+                                <input type="text" placeholder="Agrega un cupón">
+                                <a href="#">Agregar</a>
+                            </div>
+                            <div class="button-bottom-wrapper">
+                                <a class="gren-but" href="#">Pagar</a>
+                                <a class="white-but" href="#">Más Productos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </header>
+    </div>
+
+    <!-- !! MAIN -->
+
+    <main>
+
+        <div class="product-calorias-wrapper">
+
+            <div class="product-contents">
+                <div class="content-wrapper">
+                    <h1>
+                        <span class="product-title">Gold Standard 100% Casein</span>
+                        <span class="product-subtitle">Optimum Nutrition</span>
+                    </h1>
+                </div>
+
+                <ul>
+                    <li>0.85 oz de caseína micelar anticatabólica</li>
+          <li>Proteína de digestión lenta</li>
+          <li>0.18 oz de BCAA naturales</li>
+                    <li>0.18 oz de glutamina natural y ácido glutámico</li>
+
+                </ul>
+
+            </div>
+
+            <div class="img-wrap">
+                <img src="./img/page2-1.png" id="imageProduct" alt=""></div>
+
+            <div class="description">
+                <p>La proteína digerir más rápida es deseable inmediatamente antes y después del ejercicio para ayudar a repostar la recuperación de los músculos, pero la digestión y la absorción lentas pueden ser beneficiosas en otros momentos, como la hora de acostarse, cuando su cuerpo va horas sin comida. Los productos de caseína se espesan en el estómago y pueden tardar más en descomponerse en sus subcomponentes de aminoácidos.
+<br><br>
+Al usar solo caseína micelar premium como fuente de proteínas, hemos creado una fórmula que establece el estándar para el soporte de proteínas de digestión lenta.</p>
+                <div class="price"><span id="price">214.00 PEN</span></div>
+
+                <!-- !!! RADIO BUTTONS COULD BE HERE !!! -->
+
+                <script>
+                    function imgchange() {
+                        let taste = document.querySelector('[name="taste"]:checked').value,
+                            size = document.querySelector('[name="size"]:checked').value;
+                        count = document.querySelector('[name="count"]').value
+
+                        if (size === "small") {
+                            document.getElementById("price").innerHTML = "214.00 PEN";
+                        }
+
+                        if (size === "big") {
+                            document.getElementById("price").innerHTML = "214.00 PEN";
+
+                        }
+
+                        if (taste === "choko") {
+                            if (size === 'small') {
+                                document.getElementById("imageProduct").src = "";
+                            }
+                            if (size === 'big') {
+                                document.getElementById("imageProduct").src =
+                                    "img/page2-1.png";
+                            }
+                        }
+
+                        if (taste === "vanilla") {
+                            if (size === 'small') {
+                                document.getElementById("imageProduct").src = "";
+                            }
+                            if (size === 'big') {
+                                document.getElementById("imageProduct").src =
+                                    "img/page2-2.png";
+                            }
+                        }
+
+                        console.log(size, taste);
+                    }
+                </script>
+
+                <form class="form" action="" method="POST" name="s_form" onchange="imgchange()">
+                    <div class="title" style="display: none">Tamaño</div>
+                    <div class="sizeWrap" style="display: none">
+                        <div class="label">
+                            <input type="radio" id="big" name="size" value="big" checked="checked" />
+                            <label for="big"><img src="" alt=""></label>
+
+                        </div>
+                        <div class="label">
+                            <input type="radio" id="small" name="size" value="small" />
+                            <label for="small"><img src="" alt=""></label>
+
+                        </div>
+                    </div>
+
+                    <div class="title">Sabor</div>
+                    <div class="wrap">
+                        <div class="label">
+                            <input type="radio" id="choko" name="taste" value="choko" checked="checked" />
+                            <label for="choko">Peanut Butter</label>
+
+                        </div>
+
+                        <div class="label">
+                            <input type="radio" id="vanilla" name="taste" value="vanilla" />
+                            <label for="vanilla">Chocolate</label>
+
+                        </div>
+                    </div>
+
+                    <div class="number-input">
+                        <input type="number" name="count" id="countProduct" min="1" value="1">
+                        <div class="addProduct button">Añadir al carrito</div>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+
+    <div class="cal-advantages-wrapper">
+      <div class="cal-advantages">
+        <div class="advantages-content">
+          <div class="advantages-title">Optimum Nutrition 100% <br>proteína de caseína</div>
+          <ul>
+		    <li>Calidad de nutrición óptima.
+Optimum Nutrition tiene una historia de 30 años en establecer estándares más altos de calidad. Cada batido se mezcla fácilmente en una taza de coctelera, y sabe consistentemente bien, agitar después de agitar.
+</li>
+            <li>Ocasiones de uso de caseína<br>
+- Entre las comidas<br>
+
+- Antes de la cama</li>
+            <li>Beneficios de Casein
+Los aminoácidos en proteína son los bloques de construcción de la masa muscular. La proteína de caseína puede entregar aminoácidos de cadena ramificada (BCAA) a recuperar los músculos durante hasta 8 horas.
+</li>
+            <li>Ayudar a reabastecer músculos en recuperación.</li>
+            <li>Rico en caseína micelar altamente anticatabólica.</li>
+			<li>Sin sabores artificiales, edulcorantes o colores sintéticos.
+			</li>
+
+          </ul>
+
+        </div>
+        <div class="wrap-img">
+          <img src="./img/page2-3.jpg" alt=""></div>
+      </div>
+    </div>
+
+    </main>
+    <!-- !! END MAIN -->
+
+    <div class="bottom-container">
+        <footer>
+            <div class="img-logo">
+                <img src="./img/logo-blanco.png" alt="" />
+            </div>
+            <div class="text-wrapper">
+                <div class="terms">
+                    <p>Optimum Nutrition © 2020   </p>
+                    <a href="politica-privacidad.html">Política de privacidad</a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(".lazy").slick({
+            lazyLoad: "ondemand", // ondemand progressive anticipated
+            infinite: true,
+            autoHeight: true,
+            fade: true,
+        });
+    </script>
+    <script src="./js/accordion.js"></script>
+    <script src="./cart.js"></script>
+</body>
+
+</html>
